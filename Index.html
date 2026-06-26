@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ayunida Birthday Final</title>
+  
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+overflow-x:hidden;
+background:linear-gradient(135deg,#ffdbe9,#ffeef5,#fff8fb);
+min-height:100vh;
+}
+
+/* BACKGROUND */
+
+.bg{
+position:fixed;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:-2;
+}
+
+.circle{
+position:absolute;
+border-radius:50%;
+background:rgba(255,255,255,.35);
+animation:float 12s linear infinite;
+}
+
+.circle:nth-child(1){
+width:180px;
+height:180px;
+left:5%;
+top:80%;
+animation-duration:16s;
+}
+
+.circle:nth-child(2){
+width:120px;
+height:120px;
+right:8%;
+top:90%;
+animation-duration:13s;
+}
+
+.circle:nth-child(3){
+width:250px;
+height:250px;
+left:40%;
+top:100%;
+animation-duration:20s;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+100%{
+transform:translateY(-120vh);
+}
+
+}
+
+.container{
+
+width:100%;
+padding:30px 20px 80px;
+text-align:center;
+
+}
+
+/* TITLE */
+
+.title{
+
+background:#ff5f96;
+display:inline-block;
+padding:18px 40px;
+border-radius:60px;
+color:white;
+font-size:30px;
+font-weight:bold;
+box-shadow:0 12px 25px rgba(255,80,150,.35);
+
+animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+}
+
+/* SUBTITLE */
+
+.subtitle{
+
+margin-top:18px;
+font-size:18px;
+color:#ff5d92;
+font-weight:600;
+
+}
+
+/* CALENDAR */
+
+.calendar{
+
+margin:40px auto;
+
+width:280px;
+
+background:white;
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.calendar .top{
+
+background:#ff5f96;
+
+padding:14px;
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+
+.calendar .date{
+
+padding:30px;
+
+}
+
+.calendar .number{
+
+font-size:70px;
+
+font-weight:bold;
+
+color:#ff5f96;
+
+animation:pulse 1s infinite;
+
+}
+
+.calendar .month{
+
+font-size:22px;
+
+color:#666;
+
+font-weight:600;
+
+}
+
+.calendar .year{
+
+color:#888;
+
+margin-top:6px;
+
+}
+
+@keyframes pulse{
+
+0%,100%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.08);
+}
+
+}
+
+/* PHOTO */
+
+.gallery{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-top:35px;
+
+}
+
+.frame{
+
+background:white;
+
+padding:10px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(255,105,180,.25);
+
+transform:rotate(-5deg);
+
+}
+
+.frame:nth-child(2){
+
+transform:rotate(5deg);
+
+}
+
+.frame img{
+
+width:150px;
+
+height:200px;
+
+border-radius:15px;
+
+object-fit:cover;
+
+display:block;
+
+}
+
+.caption{
+
+margin-top:10px;
+
+color:#ff5f96;
+
+font-weight:bold;
+
+}
+
+/* lanjut part 2 */
+
+</style>
+
+</head>
+
+<body>
+
+<div class="bg">
+
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+</div>
+
+<div class="container">
+
+<div class="title">
+🎉 Happy Birthday Ayunida 🎉
+</div>
+
+<div class="subtitle">
+Semoga hari ini menjadi hari paling indah untukmu 💖
+</div>
+
+<div class="calendar">
+
+<div class="top">
+📅 Birthday
+</div>
+
+<div class="date">
+
+<div class="number">
+26
+</div>
+
+<div class="month">
+JUNI
+</div>
+
+<div class="year">
+2026
+</div>
+
+</div>
+
+</div>
+
+<div class="gallery">
+
+<div class="frame">
+
+<img src="IMG_20260626_183551_239.jpg" alt="foto nida" width="120px">
+
+<div class="caption">
+👑 Birthday Queen
+</div>
+
+</div>
+
+<div class="frame">
+
+<img src="IMG_20260626_183027_807.jpg" alt="foto nida" width="120px">
+
+<div class="caption">
+💕 Beautiful Queen
+</div>
+
+</div
+
+</div>
+<!-- ================= GIFT SECTION ================= -->
+
+<style>
+
+/* Gift Area */
+
+.gift-section{
+
+margin-top:50px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+/* Hint */
+
+.tap{
+
+font-size:18px;
+
+font-weight:bold;
+
+color:#ff4f8a;
+
+margin-bottom:20px;
+
+animation:blink 1s infinite;
+
+}
+
+@keyframes blink{
+
+0%,100%{
+opacity:1;
+}
+
+50%{
+opacity:.35;
+}
+
+}
+
+/* Gift */
+
+.gift{
+
+font-size:110px;
+
+cursor:pointer;
+
+transition:.5s;
+
+animation:giftFloat 2s infinite ease-in-out;
+
+filter:drop-shadow(0 10px 20px rgba(255,0,120,.3));
+
+}
+
+.gift:hover{
+
+transform:scale(1.15);
+
+}
+
+@keyframes giftFloat{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+/* Sparkle */
+
+.sparkle{
+
+position:absolute;
+
+font-size:22px;
+
+animation:spark 2s infinite;
+
+opacity:.8;
+
+}
+
+.s1{
+left:18%;
+top:68%;
+animation-delay:0s;
+}
+
+.s2{
+right:18%;
+top:70%;
+animation-delay:.8s;
+}
+
+.s3{
+left:50%;
+top:62%;
+animation-delay:1.5s;
+}
+
+@keyframes spark{
+
+0%{
+transform:scale(0);
+opacity:0;
+}
+
+50%{
+transform:scale(1);
+opacity:1;
+}
+
+100%{
+transform:scale(0);
+opacity:0;
+}
+
+}
+
+/* Explosion */
+
+.confetti{
+
+position:fixed;
+
+width:10px;
+
+height:10px;
+
+border-radius:50%;
+
+pointer-events:none;
+
+animation:fall 3s linear forwards;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(-100px) rotate(0);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(120vh) rotate(720deg);
+
+opacity:0;
+
+}
+
+}
+
+/* Content */
+
+.content{
+
+display:none;
+
+animation:fade .8s ease;
+
+margin-top:35px;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+
+<div class="gift-section">
+
+<div class="tap">
+👇 Klik Kadonya 👇
+</div>
+
+<div class="sparkle s1">✨</div>
+<div class="sparkle s2">💖</div>
+<div class="sparkle s3">⭐</div>
+
+<div class="gift" onclick="openGift()">
+🎁
+</div>
+
+</div>
+
+<div class="content" id="content">
+
+<style>
+
+/* ===== CAKE ===== */
+
+.cake-box{
+display:flex;
+justify-content:center;
+margin-top:20px;
+}
+
+.cake{
+position:relative;
+width:180px;
+height:180px;
+animation:floatCake 3s ease-in-out infinite;
+}
+
+@keyframes floatCake{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
+.layer1{
+position:absolute;
+bottom:0;
+left:20px;
+width:140px;
+height:50px;
+background:#ff8fb1;
+border-radius:18px;
+}
+
+.layer2{
+position:absolute;
+bottom:45px;
+left:35px;
+width:110px;
+height:42px;
+background:#ffc3d8;
+border-radius:15px;
+}
+
+.layer3{
+position:absolute;
+bottom:82px;
+left:50px;
+width:80px;
+height:35px;
+background:#fff;
+border-radius:12px;
+}
+
+.icing{
+position:absolute;
+bottom:115px;
+left:45px;
+font-size:34px;
+}
+
+.candle{
+position:absolute;
+bottom:118px;
+left:86px;
+width:8px;
+height:42px;
+background:#6ec6ff;
+border-radius:5px;
+}
+
+.flame{
+position:absolute;
+bottom:160px;
+left:80px;
+font-size:20px;
+animation:flicker .6s infinite alternate;
+}
+
+@keyframes flicker{
+from{transform:scale(1);}
+to{transform:scale(1.2);}
+}
+
+/* ===== CARD ===== */
+
+.card{
+margin:35px auto;
+width:92%;
+max-width:380px;
+background:white;
+padding:20px;
+border-radius:22px;
+box-shadow:0 15px 35px rgba(255,105,180,.25);
+text-align:left;
+}
+
+.card h2{
+color:#ff4f8a;
+text-align:center;
+margin-bottom:15px;
+}
+
+.card p{
+line-height:1.8;
+font-size:15px;
+color:#555;
+}
+
+/* ===== BUTTON ===== */
+
+.blowBtn{
+margin-top:20px;
+padding:12px 24px;
+border:none;
+border-radius:30px;
+background:#ff5f96;
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.blowBtn:hover{
+transform:scale(1.05);
+}
+
+</style>
+
+<div class="cake-box">
+
+<div class="cake">
+
+<div class="layer1"></div>
+<div class="layer2"></div>
+<div class="layer3"></div>
+
+<div class="icing">🍓</div>
+
+<div class="candle"></div>
+
+<div class="flame" id="flame">
+🔥
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>💌 Untuk Ayunida</h2>
+
+<p>
+
+Happy Birthday yaa Ayunida! 🎉💖
+
+Semoga di umur yang baru ini kamu selalu diberi kesehatan, kebahagiaan, rezeki yang lancar, dan semua impianmu bisa tercapai satu per satu.
+
+Terima kasih sudah menjadi orang yang baik. Jangan lupa selalu tersenyum, tetap semangat menjalani hari-hari, dan semoga semua hal baik selalu datang menghampiri kamu.
+
+Semoga ulang tahun kali ini menjadi awal dari tahun yang penuh kebahagiaan dan cerita indah.
+
+Selamat ulang tahun yaa! 🥳🎂✨
+
+</p>
+
+<center>
+
+<button class="blowBtn" onclick="blowCandle()">
+
+🎂 Tiup Lilin
+
+</button>
+
+</center>
+
+</div>
+
+<script>
+
+function blowCandle(){
+
+document.getElementById("flame").style.display="none";
+
+}
+
+</script>
+
+<!-- ===== AUDIO ===== -->
+
+<audio id="music" loop>
+    <source src="ssstik.io_1782481332257.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sfx">
+    <source src="ssstik.io_1782514841233.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+function openGift(){
+
+    // Hilangkan gift
+    document.querySelector(".gift-section").style.display="none";
+
+    // Tampilkan isi
+    document.getElementById("content").style.display="block";
+
+    // Mainkan musik
+    const music=document.getElementById("music");
+    music.volume=0.8;
+    music.play().catch(()=>{});
+
+    // Mainkan sound effect
+    const sfx=document.getElementById("sfx");
+    sfx.currentTime=0;
+    sfx.play().catch(()=>{});
+
+    // Confetti
+    for(let i=0;i<180;i++){
+
+        let c=document.createElement("div");
+
+        c.className="confetti";
+
+        c.style.left=Math.random()*100+"vw";
+
+        c.style.top="-30px";
+
+        c.style.width=(6+Math.random()*8)+"px";
+        c.style.height=c.style.width;
+
+        c.style.background=
+        "hsl("+(Math.random()*360)+",100%,65%)";
+
+        c.style.animationDuration=
+        (2+Math.random()*3)+"s";
+
+        document.body.appendChild(c);
+
+        setTimeout(()=>{
+            c.remove();
+        },5000);
+
+    }
+
+}
+
+/* Balon */
+
+for(let i=0;i<12;i++){
+
+let b=document.createElement("div");
+
+b.innerHTML="🎈";
+
+b.style.position="fixed";
+
+b.style.left=Math.random()*100+"vw";
+
+b.style.bottom="-100px";
+
+b.style.fontSize=(30+Math.random()*20)+"px";
+
+b.style.animation=
+"balloon "+(10+Math.random()*8)+"s linear infinite";
+
+b.style.animationDelay=(Math.random()*5)+"s";
+
+document.body.appendChild(b);
+
+}
+
+const style=document.createElement("style");
+
+style.innerHTML=`
+
+@keyframes balloon{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-130vh);
+
+}
+
+}
+
+`;
+
+document.head.appendChild(style);
+
+/* Love */
+
+setInterval(()=>{
+
+let love=document.createElement("div");
+
+love.innerHTML="💖";
+
+love.style.position="fixed";
+
+love.style.left=Math.random()*100+"vw";
+
+love.style.top="-20px";
+
+love.style.fontSize=(18+Math.random()*15)+"px";
+
+love.style.animation="loveFall 6s linear";
+
+document.body.appendChild(love);
+
+setTimeout(()=>{
+
+love.remove();
+
+},6000);
+
+},700);
+
+const style2=document.createElement("style");
+
+style2.innerHTML=`
+
+@keyframes loveFall{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(120vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+`;
+
+document.head.appendChild(style2);
+
+</script>
+
+</body>
+</html>
